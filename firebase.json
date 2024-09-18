@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"bubbly-chatting","appId":"1:97042540061:android:cc872a0ef6a4d3c372c8f4","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"bubbly-chatting","configurations":{"android":"1:97042540061:android:cc872a0ef6a4d3c372c8f4","ios":"1:97042540061:ios:4415964d0b8c052b72c8f4"}}}}}}

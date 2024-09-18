@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "97042540061",
+    "project_id": "bubbly-chatting",
+    "storage_bucket": "bubbly-chatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97042540061:android:cc872a0ef6a4d3c372c8f4",
+        "android_client_info": {
+          "package_name": "com.example.bubbly_chatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97042540061-h39mi24o1e6p7p7g5eckon0olt078gfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiO8bC705Nr952fEU_29eLnGo4WpY5t5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97042540061-h39mi24o1e6p7p7g5eckon0olt078gfd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "97042540061-s74d3rcl1kao0r6rfnt4j50s4f4qq4a4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bubblyChatting"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
