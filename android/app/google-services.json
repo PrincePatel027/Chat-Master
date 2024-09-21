@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "97042540061-h39mi24o1e6p7p7g5eckon0olt078gfd.apps.googleusercontent.com",
+          "client_id": "97042540061-17l5m5fk6f785abkm4nqdna2an6pvhis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bubbly_chatting",
+            "certificate_hash": "57ec418681eadd648e43a5d354ae2bf644411a4c"
+          }
+        },
+        {
+          "client_id": "97042540061-v21pm5t18jpbcd46mkrrn5rtfvt2v3dh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

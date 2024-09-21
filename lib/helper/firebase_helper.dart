@@ -11,7 +11,7 @@ class FirebaseHelper {
   static FirebaseHelper firebaseHelper = FirebaseHelper._();
 
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-  GoogleSignIn googleSignIn = GoogleSignIn();
+  static final GoogleSignIn googleSignIn = GoogleSignIn();
 
   // Anonymous
   Future<User?> anonymousLogIn({required BuildContext context}) async {
@@ -115,6 +115,8 @@ class FirebaseHelper {
     await firebaseAuth.signOut();
     await googleSignIn.signOut();
   }
+
+  // keytool -list -v -alias androiddebugkey -keystore C:\\Users\\princ\\.android\\debug.keystore
 
   // Login with google
   Future<User?> signInWithGoogle({required BuildContext context}) async {

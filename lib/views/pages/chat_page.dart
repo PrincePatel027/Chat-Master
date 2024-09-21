@@ -281,34 +281,34 @@ class _ChatPageState extends State<ChatPage> {
               decoration: InputDecoration(
                 hintText: "Send Message",
                 border: const OutlineInputBorder(),
-                suffixIcon: (msgController.text == "" ||
-                        msgController.text.isEmpty)
-                    ? null
-                    : IconButton(
-                        onPressed: () async {
-                          (msgController.text.isEmpty ||
-                                  msgController.text == "")
-                              ? null
-                              : await FirestoreDbHelper.firestoreDbHelper
-                                  .sendMessage(
-                                  recieverEmail: recieverEmail,
-                                  msg: msgController.text,
-                                );
-                          (msgController.text.isEmpty ||
-                                  msgController.text == "")
-                              ? null
-                              : FCMNotificationHelper.fCMNotificationHelper
-                                  .sendFCM(
-                                  msg: msgController.text,
-                                  senderEmail: recieverEmail,
-                                  token: await FirestoreDbHelper
-                                      .firestoreDbHelper
-                                      .getToken(recieverEmail: recieverEmail),
-                                );
-                          msgController.clear();
-                        },
-                        icon: const Icon(Icons.send),
-                      ),
+                suffixIcon:
+                    (msgController.text == "" || msgController.text.isEmpty)
+                        ? null
+                        : IconButton(
+                            onPressed: () async {
+                              (msgController.text.isEmpty ||
+                                      msgController.text == "")
+                                  ? null
+                                  : await FirestoreDbHelper.firestoreDbHelper
+                                      .sendMessage(
+                                      recieverEmail: recieverEmail,
+                                      msg: msgController.text,
+                                    );
+                              // (msgController.text.isEmpty ||
+                              //         msgController.text == "")
+                              //     ? null
+                              //     : FCMNotificationHelper.fCMNotificationHelper
+                              //         .sendFCM(
+                              //         msg: msgController.text,
+                              //         senderEmail: recieverEmail,
+                              //         token: await FirestoreDbHelper
+                              //             .firestoreDbHelper
+                              //             .getToken(recieverEmail: recieverEmail),
+                              //       );
+                              msgController.clear();
+                            },
+                            icon: const Icon(Icons.send),
+                          ),
               ),
             ),
           ),

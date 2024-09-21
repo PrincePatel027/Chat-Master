@@ -24,7 +24,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // User user = ModalRoute.of(context)!.settings.arguments as User;
     User? user = FirebaseAuth.instance.currentUser;
     // ignore: unused_local_variable
     double height = MediaQuery.of(context).size.height;
