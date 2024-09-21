@@ -1,16 +1,37 @@
-# bubbly_chatting
 
-A new Flutter project.
+# Bubbly Chatting App
 
-## Getting Started
+Bubbly Chatting App is a Flutter-based messaging application that enables real-time messaging between users. The app leverages Firebase for backend services and Firebase Cloud Messaging (FCM) for push notifications.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Real-time messaging
+- Push notifications using Firebase Cloud Messaging (FCM)
+- Customizable light theme
+- Multiple pages: Splash, Login, Home, and Chat
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Run the App
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Install all dependencies by running:
+    ```bash
+    flutter pub get
+    ```
+2. Start the app on an emulator or physical device:
+    ```bash
+    flutter run
+    ```
+
+## Code Structure
+
+- `main.dart`: The main entry point of the app, responsible for initializing Firebase and setting up routes.
+- `views/pages/`: Contains the app's different screens (Splash, Login, Home, Chat).
+- `helper/`: Utility classes like `LNotificationHelper` for handling local notifications.
+- `components/`: Reusable UI components like `MyLightTheme` for customizing the app's theme.
+
+## Firebase Cloud Messaging (FCM)
+
+- Push notifications are powered by Firebase Cloud Messaging (FCM).
+- The `backgroundMessageHandler` function handles background notifications.
+- The app listens for messages and notifications using:
+  - `FirebaseMessaging.onMessage` (for foreground messages)
+  - `FirebaseMessaging.onBackgroundMessage` (for background notifications)
