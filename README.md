@@ -3,6 +3,10 @@
 
 Bubbly Chatting App is a Flutter-based messaging application that enables real-time messaging between users. The app leverages Firebase for backend services and Firebase Cloud Messaging (FCM) for push notifications.
 
+# Images
+
+![chatting](https://github.com/user-attachments/assets/29c45368-1d77-4c38-a4f5-e1bbfc618e7a)
+
 ## Features
 
 - Real-time messaging
